@@ -383,9 +383,7 @@ $(function() {
         };
 
         self._enableWebcam = function() {
-            if (OctoPrint.coreui.selectedTab != "#control" 
-                || !OctoPrint.coreui.browserTabVisible
-                || $("#webcam_image").attr("src") != "") {
+            if (OctoPrint.coreui.selectedTab != "#control" || !OctoPrint.coreui.browserTabVisible) {
                 return;
             }
             
